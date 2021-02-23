@@ -14,7 +14,7 @@ city = "Brisbane"
 scatter_plot = 
 df %>%
   filter(Location == city) %>%
-  ggplot(aes(x = Temp9am, y = Humidity9am)) + 
+  ggplot(aes(x = Temp9am, y = WindGustSpeed)) + 
   geom_point(col='red')
 
 # Save the plot in graphics/
